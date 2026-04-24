@@ -1,0 +1,31 @@
+
+<RegisterLayout>:
+    orientation: "vertical"
+    padding: 20
+    spacing: 15
+
+    Label:
+        text: "Registration Form"
+        font_size: 24
+
+    TextInput:
+        id: name_input
+        hint_text: "Full Name"
+        multiline: False
+
+    TextInput:
+        id: email_input
+        hint_text: "Email"
+        multiline: False
+
+    TextInput:
+        id: password_input
+        hint_text: "Password"
+        password: True
+        multiline: False
+
+    Button:
+        text: "Register"
+        size_hint_y: None
+        height: 50
+        on_press: root.submit()
